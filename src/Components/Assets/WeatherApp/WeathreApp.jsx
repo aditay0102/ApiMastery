@@ -84,47 +84,49 @@ const WeathreApp = () => {
     }
 
     return (  
-      <div className='container'>
-          <div className='top-bar'>
-            <input className='search' type='text' placeholder='Search' />
-            <div className="Search_icon" onClick={search}>
-              <img className='search_image' src={search_icon} alt='' />
-            </div>
-          </div>
-          <div className='weather_image'>
-            <img src={wicon} alt='' />
-          </div>
-          <div className='weather_temp'>{temperature}</div>
-          <div className='location'>{location}</div>
-          
-
-          <div className='extra'> 
-            <div className="data-container">
-              <div className="element">
-                <img src={humidity_icon} alt='' className='icon'/>
-                <div className='data'>
-                  <div className="humidity_percent">{humidity}</div>
-                  <div className="text">Humidity</div>
-                </div>
+      <div className='main'>
+        <div className='container'>
+            <div className='top-bar'>
+              <input className='search' type='text' placeholder='Search' />
+              <div className="Search_icon" onClick={search}>
+                <img className='search_image' src={search_icon} alt='' />
               </div>
             </div>
-          
+            <div className='weather_image'>
+              <img src={wicon} alt='' />
+            </div>
+            <div className='weather_temp'>{temperature}</div>
+            <div className='location'>{location}</div>
+            
 
-
-            <div className="data-container">
-              <div className="element">
-                <img src={wind_icon} alt='' className='icon'/>
-                <div className='data'>
-                  <div className="wind-rate">{wind}</div>
-                  <div className="text">Wind Speed</div>
+            <div className='extra'> 
+              <div className="data-container">
+                <div className="element">
+                  <img src={humidity_icon} alt='' className='icon'/>
+                  <div className='data'>
+                    <div className="humidity_percent">{humidity}</div>
+                    <div className="text">Humidity</div>
+                  </div>
                 </div>
               </div>
-            </div>
+            
 
-          </div>
-          
+
+              <div className="data-container">
+                <div className="element">
+                  <img src={wind_icon} alt='' className='icon'/>
+                  <div className='data'>
+                    <div className="wind-rate">{wind}</div>
+                    <div className="text">Wind Speed</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+        </div>
       </div>
-  )
+  ) 
 }
 
 export default WeathreApp
