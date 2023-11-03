@@ -14,9 +14,12 @@ import axios from 'axios';
   
    
   return (
-    <>
-       <center> <h1>Top Hedlines</h1></center>
+    <div>
+    <center>
+        <h1 className='news_heading'>Top Hedlines</h1>
+    </center>
     <div className='newsMain'>
+       
          
         {
             news.map((val)=>{
@@ -39,7 +42,7 @@ import axios from 'axios';
         }
 
     </div>
-    </>
+    </div>
   )
 }
 

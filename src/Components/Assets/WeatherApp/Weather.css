@@ -71,6 +71,10 @@
     justify-content: space-around;
     color: white;
 }
+.data{
+    display: flex;
+    flex-direction: column;
+}
 
 
 .element{

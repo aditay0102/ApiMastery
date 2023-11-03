@@ -24,14 +24,15 @@ function CryptoApp() {
                             <div className='c_tile' id='img'>
                                 <h2>Coin Logo</h2>
                             </div>
-                            <div className='c_tile'>
+                            <div id='coin_name' className='c_tile'>
                                 <h2>Coin</h2>
                             </div>
                             <div className='c_tile' id='c_small'>
-                                <h2>MarketCap Rank</h2>
+                                <h2>Market
+                                    Cap</h2>
                             </div>
-                            <div className='c_tile'>
-                            <h2>Price in USD</h2>
+                            <div id='cprice' className='c_tile'>
+                            <h2>PriceUSD</h2>
                             </div>
                         </div>
             {
@@ -39,7 +40,7 @@ function CryptoApp() {
                     return(
                         <div className='Crypto_tile'>
                             <div className='c_tile' id='img'>
-                                <img src={data.item.small} alt='cryptoImage' className='image_size' />
+                                <img id='crypto_img' src={data.item.small} alt='cryptoImage' className='image_size' />
                             </div>
                             <div className='c_tile'>
                                 <h2>{data.item.name}</h2>
@@ -47,7 +48,7 @@ function CryptoApp() {
                             <div className='c_tile' id='c_small'>
                                 <h3>{data.item.market_cap_rank}</h3>
                             </div>
-                            <div className='c_tile'>
+                            <div id='price_' className='c_tile'>
                             <h2>{data.item.price_btc}</h2>
                             </div>
                         </div>

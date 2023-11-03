@@ -16,7 +16,6 @@ function App() {
   return (
     <div className='newsMain'>
         <div className='navbar'>
-          
             <Link className='li' to="/">Weather App</Link>
             <Link className='li' to="/news">News App</Link>
             <Link className='li' to="/Crypto">Crypto</Link>
